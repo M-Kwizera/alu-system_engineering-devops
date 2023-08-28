@@ -13,7 +13,7 @@ username="$3"
 ssh_key="$4"
 
 # Transferring the file using scp
-scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$username"@"$server_ip":~/
+scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$ubuntu"@"54.160.237.13":~/
 
 # Checking the exit code 
 if [ $? -eq 0 ]; then
